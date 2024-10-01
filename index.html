@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
+    <link rel="stylesheet" href="assets/sass/animations.css">
+    <link rel="stylesheet" href="assets/sass/rs.css">
+    <link rel="stylesheet" href="assets/sass/base.css">
+    <link rel="stylesheet" href="assets/sass/style.css">
+    <link rel="stylesheet" href="assets/sass/reponsive.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- announcement-bar -->
+    <div class="announcement-bar">
+        <div class="announcement-bar_text" id="announcementText">
+            <p>Sign up and get 20% off to your first order. <span>Sign Up Now</span></p>
+        </div>
+    </div>
+    <!-- Menu -->
+     <div class="container">
+        <div class="header-wrap">
+            <div class="box-toggle">
+                <img src="assets/img/toggle.svg " id="toggleDiv" alt="Your Image" style="cursor: pointer;"/>
+                <div id="overlay" class="overlay">
+                    <div class="toggle-title">
+                        <div class="toggle-title-item" onclick="moveUnderline(this)">MENU</div>
+                        <div class="toggle-title-item" onclick="moveUnderline(this)">CATEGORIES</div>
+                        <div class="underline"></div> <!-- Đường gạch chân -->
+                    </div>
+                    <div id="menuItems" class="items">
+                        <div class="toggle-item">
+                            <a href="javascript:void(0);" class="toggle-item-w">
+                                <span class="menu-item">Shop</span>
+                                <span class="toggle-icon"><img src="assets/img/froduct/increase.svg" alt=""></span>
+                            </a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                    <li><a href="#">Item 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="toggle-item">
+                            <a href="javascript:void(0);" class="toggle-item-w">
+                                <span class="menu-item">On sale</span>
+                                <span class="toggle-icon"><img src="assets/img/froduct/increase.svg" alt=""></span>
+                            </a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                    <li><a href="#">Item 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="toggle-item">
+                            <a href="javascript:void(0);" class="toggle-item-w">
+                                <span class="menu-item">New Arrivals</span>
+                                <span class="toggle-icon"><img src="assets/img/froduct/increase.svg" alt=""></span>
+                            </a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                    <li><a href="#">Item 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="toggle-item">
+                            <a href="javascript:void(0);" class="toggle-item-w">
+                                <span class="menu-item">Brands</span>
+                                <span class="toggle-icon"><img src="assets/img/froduct/increase.svg" alt=""></span>
+                            </a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                    <li><a href="#">Item 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="toggle-item">
+                            <a href="javascript:void(0);" class="toggle-item-w">
+                                <span class="menu-item">
+                                    <p>Need help ?</p>
+                                    <p>+0123456789</p>
+                                    <p>hungtien3399@gmail.com</p>
+                                </span>
+                                <span class="toggle-icon"style="display: none;"><img src="assets/img/froduct/increase.svg" alt="" ></span>
+                            </a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                    <li><a href="#">Item 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                        <div class="toggle-item">
+                            <a href="javascript:void(0);" class="toggle-item-w">
+                                <span class="menu-item">English</span>
+                                <span class="toggle-icon"><img src="assets/img/froduct/increase.svg" alt=""></span>
+                            </a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">VietNames</a></li>
+                                    <li><a href="#">Chines</a></li>
+                                    <li><a href="#">US</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="toggle-item">
+                            <a href="javascript:void(0);" class="toggle-item-w">
+                                <span class="menu-item"><img src="https://cdn.shopify.com/static/images/flags/vn.svg?width=30" alt="">Vn</span>
+                                <span class="toggle-icon"><img src="assets/img/froduct/increase.svg" alt=""></span>
+                            </a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">Em lười --</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="categoryItems" class="items">
+                        <div class="categoryItems-item">
+                            <i class="fa-solid fa-person"></i>
+                            <span>Women’s Clothing</span>
+                        </div>
+                        <div class="categoryItems-item">
+                            <i class="fa-solid fa-person-dress"></i>
+                            <span>Men’s Clothing</span>
+                        </div>
+                        <div class="categoryItems-item">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Watches</span>
+                        </div>
+                        <div class="categoryItems-item">
+                            <i class="fa-solid fa-glasses"></i>
+                            <span>Accessories</span>
+                        </div>
+                        <div class="categoryItems-item">
+                            <i class="fa-solid fa-camera-retro"></i>
+                            <span>Electric</span>
+                        </div>
+                        <div class="categoryItems-item">
+                            <i class="fa-solid fa-shoe-prints"></i>
+                            <span>Shoes</span>
+                        </div>
+                        <div class="categoryItems-item">
+                            <i class="fa-regular fa-gem"></i>
+                            <span>Jewellery</span>
+                        </div>
+                        <div class="categoryItems-item">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>Bag's</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="background" class="background"></div>
+            </div>
+            <div class="header-logo-left">
+                <img src="assets/img/menu_logo.svg" alt="">
+            </div>
+            <div class="header-menu-item">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#" class="hover-menu">Shop</a>
+                            <img src="assets/img/caret.svg" alt=""> 
+                            <div class="sub-menu"> 
+                                <div class="container" style="width:940px;">
+                                    <div class="row sup-menu-main">
+                                        <div class="col-md-2 sup-menu-colum_one">
+                                            <h1>Shop page</h1>
+                                            <div class="menu-line"></div>
+                                            <div class="sup-menu-description">
+                                                <ul>
+                                                    <li><a href="">Grid Layout</a></li>
+                                                    <li><a href="">Masonry layout</a></li>
+                                                    <li><a href="">Left sidebar</a></li>
+                                                    <li><a href="">Right sidebar</a></li>
+                                                    <li><a href="">Full width layout</a></li>
+                                                    <li><a href="">Image catalog</a></li>
+                                                    <li><a href="">Drawer sidebar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 sup-menu-colum_one">
+                                            <h1>FEATURES</h2>
+                                                <div class="menu-line"></div>
+                                            <div class="sup-menu-description">
+                                                <ul>
+                                                    <li><a href="">Filter options</a></li>
+                                                    <li><a href="">Filters sidebar</a></li>
+                                                    <li><a href="">Load more</a></li>
+                                                    <li><a href="">Infinite scrolling</a></li>
+                                                    <li><a href="">Search sidebar</a></li>
+                                                    <li><a href="">Search fullwidth</a></li>
+                                                    <li><a href="">Progress bar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 sup-menu-colum_three">
+                                            <div class="sup-menu-colum_three-main">
+                                                <div class="sup-menu-colum_three-main-box">
+                                                    <div class="sup-menu-colum_three-main-btn btn">
+                                                        <a href="">Gym</a>
+                                                    </div>
+                                                    <img src="assets/img/froduct/gym.svg" alt="">
+                                                </div>
+                                                <div class="sup-menu-colum_three-main-box">
+                                                    <div class="sup-menu-colum_three-main-btn btn">
+                                                        <a href="">Causual</a>
+                                                    </div>
+                                                    <img src="assets/img/froduct/casuaal.svg" alt=""> 
+                                                </div>                              
+                                            </div>
+                                            <div class="sup-menu-colum_three-main">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 sup-menu-colum_four">
+                                            <h1 class="toprate-title">Top Tate</h1>
+                                            <div class="toprate-line"></div>
+                                            <div class="sup-menu-colum_four-item">
+                                                <div class="col-md-4 colum_four-img">
+                                                    <img src="assets/img/froduct-new-jean.svg" alt="">
+                                                </div>
+                                                <div class="col-md-8 colum_four-descriprion">
+                                                    <div class="froduct-new-item-pescription">
+                                                        <p class="froduct-new-item-name" style="font-size: 16px;">Loose Fit Bermuda Shorts</p>
+                                                        <div class="froduct-item-boxstart">
+                                                            <img src="assets/img/4-5start.svg" style="width: 27%;" alt="">
+                                                            <p class="froduct-new-item-number-start">4.5.0/5</p>
+                                                        </div>
+                                                        <div class="froduct-new-item-boxprice">
+                                                            <p class="froduct-new-item-newPrice" style="font-size: 22px;">$80</p>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <div class="product-line"></div>
+                                            <div class="sup-menu-colum_four-item">assets/img/froduct-new-shirt.svg
+                                                <div class="col-md-4 colum_four-img">
+                                                    <img src="assets/img/froduct-new-shirt.svg" alt="">
+                                                </div>
+                                                <div class="col-md-8 colum_four-descriprion">
+                                                    <div class="froduct-new-item-pescription">
+                                                        <p class="froduct-new-item-name" style="font-size: 16px;">Loose Fit Bermuda Shorts</p>
+                                                        <div class="froduct-item-boxstart">
+                                                            <img src="assets/img/5strat.svg" style="width: 27%;" alt="">
+                                                            <p class="froduct-new-item-number-start">5.0/5</p>
+                                                        </div>
+                                                        <div class="froduct-new-item-boxprice">
+                                                            <p class="froduct-new-item-newPrice" style="font-size: 22px;">$16B</p>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <div class="product-line"></div>
+                                            <div class="sup-menu-colum_four-item">
+                                                <div class="col-md-4 colum_four-img">
+                                                    <img src="assets/img/froduct/sm_2_1.svg" alt="">
+                                                </div>
+                                                <div class="col-md-8 colum_four-descriprion">
+                                                    <div class="froduct-new-item-pescription">
+                                                        <p class="froduct-new-item-name" style="font-size: 16px;">Loose Fit Bermuda Shorts</p>
+                                                        <div class="froduct-item-boxstart">
+                                                            <img src="assets/img/5strat.svg" style="width: 27%;" alt="">
+                                                            <p class="froduct-new-item-number-start">5.0/5</p>
+                                                        </div>
+                                                        <div class="froduct-new-item-boxprice">
+                                                            <p class="froduct-new-item-newPrice" style="font-size: 22px;">$80</p>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <div class="product-line"></div>
+                                        </div>
+                                    </div>
+                                </div>                         
+                            </div> 
+                        </li>
+                        <li>
+                            <a href="#" class="hover-menu">On Sale</a>
+                        
+                            <div class="sub-menu" style="width: 370px;"> 
+                                <div class="container" style="width:940px;">
+                                    <div class="row sup-menu-main">
+                                        <div class="col-md-2 sup-menu-colum_one">
+                                            <h1>shop page</h1>
+                                            <div class="menu-line"></div>
+                                            <div class="sup-menu-description">
+                                                <ul>
+                                                    <li><a href="">Grid Layout</a></li>
+                                                    <li><a href="">Masonry layout</a></li>
+                                                    <li><a href="">Left sidebar</a></li>
+                                                    <li><a href="">Right sidebar</a></li>
+                                                    <li><a href="">Full width layout</a></li>
+                                                    <li><a href="">Image catalog</a></li>
+                                                    <li><a href="">Drawer sidebar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 sup-menu-colum_one">
+                                            <h1>shop page</h2>
+                                                <div class="menu-line"></div>
+                                            <div class="sup-menu-description">
+                                                <ul>
+                                                    <li><a href="">Filter options</a></li>
+                                                    <li><a href="">Filters sidebar</a></li>
+                                                    <li><a href="">Load more</a></li>
+                                                    <li><a href="">Infinite scrolling</a></li>
+                                                    <li><a href="">Search sidebar</a></li>
+                                                    <li><a href="">Search fullwidth</a></li>
+                                                    <li><a href="">Progress bar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 sup-menu-colum_three">
+                                            <div class="sup-menu-colum_three-main">
+                                
+                                            </div>
+                                            <div class="sup-menu-colum_three-main">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 sup-menu-colum_four">
+                                            <div class="sup-menu-colum_four-item"></div>
+                                            <div class="sup-menu-colum_four-item"></div>
+                                            <div class="sup-menu-colum_four-item"></div>
+                                            <div class="sup-menu-colum_four-item"></div>
+                                        </div>
+                                    </div>
+                                </div>                         
+                            </div> 
+                        </li>
+                        <li>
+                            <a href="#" class="hover-menu">New Arrivals</a>
+                            
+                            <div class="sub-menu"> 
+                                <div class="container" style="width:940px;">
+                                    <div class="row sup-menu-main">
+                                        <div class="col-md-2 sup-menu-colum_one">
+                                            <h1>Shop page</h1>
+                                            <div class="menu-line"></div>
+                                            <div class="sup-menu-description">
+                                                <ul>
+                                                    <li><a href="">Grid Layout</a></li>
+                                                    <li><a href="">Masonry layout</a></li>
+                                                    <li><a href="">Left sidebar</a></li>
+                                                    <li><a href="">Right sidebar</a></li>
+                                                    <li><a href="">Full width layout</a></li>
+                                                    <li><a href="">Image catalog</a></li>
+                                                    <li><a href="">Drawer sidebar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 sup-menu-colum_one">
+                                            <h1>FEATURES</h2>
+                                                <div class="menu-line"></div>
+                                            <div class="sup-menu-description">
+                                                <ul>
+                                                    <li><a href="">Filter options</a></li>
+                                                    <li><a href="">Filters sidebar</a></li>
+                                                    <li><a href="">Load more</a></li>
+                                                    <li><a href="">Infinite scrolling</a></li>
+                                                    <li><a href="">Search sidebar</a></li>
+                                                    <li><a href="">Search fullwidth</a></li>
+                                                    <li><a href="">Progress bar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 sup-menu-colum_three">
+                                            <div class="sup-menu-colum_three-main">
+                                                <div class="sup-menu-colum_three-main-box">
+                                                    <div class="sup-menu-colum_three-main-btn btn">
+                                                        <a href="">Gym</a>
+                                                    </div>
+                                                    <img src="assets/img/froduct/gym.svg" alt="">
+                                                </div>
+                                                <div class="sup-menu-colum_three-main-box">
+                                                    <div class="sup-menu-colum_three-main-btn btn">
+                                                        <a href="">Causual</a>
+                                                    </div>
+                                                    <img src="assets/img/froduct/casuaal.svg" alt=""> 
+                                                </div>                              
+                                            </div>
+                                            <div class="sup-menu-colum_three-main">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 sup-menu-colum_four">
+                                            <h1 class="toprate-title">Top Tate</h1>
+                                            <div class="toprate-line"></div>
+                                            <div class="sup-menu-colum_four-item">
+                                                <div class="col-md-4 colum_four-img">
+                                                    <img src="assets/img/froduct-new-jean.svg" alt="">
+                                                </div>
+                                                <div class="col-md-8 colum_four-descriprion">
+                                                    <div class="froduct-new-item-pescription">
+                                                        <p class="froduct-new-item-name" style="font-size: 16px;">Loose Fit Bermuda Shorts</p>
+                                                        <div class="froduct-item-boxstart">
+                                                            <img src="assets/img/4-5start.svg" style="width: 27%;" alt="">
+                                                            <p class="froduct-new-item-number-start">4.5.0/5</p>
+                                                        </div>
+                                                        <div class="froduct-new-item-boxprice">
+                                                            <p class="froduct-new-item-newPrice" style="font-size: 22px;">$80</p>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <div class="product-line"></div>
+                                            <div class="sup-menu-colum_four-item">
+                                                <div class="col-md-4 colum_four-img">
+                                                    <img src="assets/img/froduct-new-shirt.svg" alt="">
+                                                </div>
+                                                <div class="col-md-8 colum_four-descriprion">
+                                                    <div class="froduct-new-item-pescription">
+                                                        <p class="froduct-new-item-name" style="font-size: 16px;">Loose Fit Bermuda Shorts</p>
+                                                        <div class="froduct-item-boxstart">
+                                                            <img src="assets/img/5strat.svg" style="width: 27%;" alt="">
+                                                            <p class="froduct-new-item-number-start">5.0/5</p>
+                                                        </div>
+                                                        <div class="froduct-new-item-boxprice">
+                                                            <p class="froduct-new-item-newPrice" style="font-size: 22px;">$16B</p>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <div class="product-line"></div>
+                                            <div class="sup-menu-colum_four-item">
+                                                <div class="col-md-4 colum_four-img">
+                                                    <img src="assets/img/froduct/sm_2_1.svg" alt="">
+                                                </div>
+                                                <div class="col-md-8 colum_four-descriprion">
+                                                    <div class="froduct-new-item-pescription">
+                                                        <p class="froduct-new-item-name" style="font-size: 16px;">Loose Fit Bermuda Shorts</p>
+                                                        <div class="froduct-item-boxstart">
+                                                            <img src="assets/img/5strat.svg" style="width: 27%;" alt="">
+                                                            <p class="froduct-new-item-number-start">5.0/5</p>
+                                                        </div>
+                                                        <div class="froduct-new-item-boxprice">
+                                                            <p class="froduct-new-item-newPrice" style="font-size: 22px;">$80</p>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <div class="product-line"></div>
+                                        </div>
+                                    </div>
+                                </div>                         
+                            </div> 
+                        </li>
+                        <li>
+                            <a href="#" class="hover-menu">Brands</a>
+                            
+                            <div class="sub-menu" style="width: 370px;"> 
+                                <div class="container" style="width:940px;">
+                                    <div class="row sup-menu-main">
+                                        <div class="col-md-2 sup-menu-colum_one">
+                                            <h1>shop page</h1>
+                                            <div class="menu-line"></div>
+                                            <div class="sup-menu-description">
+                                                <ul>
+                                                    <li><a href="">Grid Layout</a></li>
+                                                    <li><a href="">Masonry layout</a></li>
+                                                    <li><a href="">Left sidebar</a></li>
+                                                    <li><a href="">Right sidebar</a></li>
+                                                    <li><a href="">Full width layout</a></li>
+                                                    <li><a href="">Image catalog</a></li>
+                                                    <li><a href="">Drawer sidebar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 sup-menu-colum_one">
+                                            <h1>shop page</h2>
+                                                <div class="menu-line"></div>
+                                            <div class="sup-menu-description">
+                                                <ul>
+                                                    <li><a href="">Filter options</a></li>
+                                                    <li><a href="">Filters sidebar</a></li>
+                                                    <li><a href="">Load more</a></li>
+                                                    <li><a href="">Infinite scrolling</a></li>
+                                                    <li><a href="">Search sidebar</a></li>
+                                                    <li><a href="">Search fullwidth</a></li>
+                                                    <li><a href="">Progress bar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 sup-menu-colum_three">
+                                            <div class="sup-menu-colum_three-main">
+                                
+                                            </div>
+                                            <div class="sup-menu-colum_three-main">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 sup-menu-colum_four">
+                                            <div class="sup-menu-colum_four-item"></div>
+                                            <div class="sup-menu-colum_four-item"></div>
+                                            <div class="sup-menu-colum_four-item"></div>
+                                            <div class="sup-menu-colum_four-item"></div>
+                                        </div>
+                                    </div>
+                                </div>                         
+                            </div> 
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="header-box-icon">
+                <div class="header-search">
+                    <img class="search-icon myImage" src="assets/img/icon_search.svg" alt="">
+                    <div class="search-container_d">
+                        <input class="search-input inputAnimation myInput" id="search-input-product_d" type="text" placeholder="Search for products...">
+                    <div id="product-list_d" style="display:none;">
+                        <!-- Danh sách sản phẩm sẽ được hiển thị ở đây -->
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="menu-icon-right img-hover">
+                    <img id="openYellowPage" src="assets/img/aicon-s.svg" alt="Icon">
+                    <div class="overlayone"></div>
+                    <div class="yellow-page">
+                        <div class="container">
+                            <div class="search-container">
+                                <select id="productType">
+                                    <option value="">All Categories</option>
+                                    <option value="clothing">Quần áo</option>
+                                    <option value="shoes">Giày dép</option>
+                                    <option value="hats">Mũ</option>
+                                </select>
+                                <input type="text" id="searchInput" placeholder="Search">
+                                <div class="btn-search"><a href="">Search result</a></div>
+                                
+                                    <ul id="productList" class="product-list"></ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <img id="openYellowPagexc" src="assets/img/froduct/cart.svg" alt="Iconxc">
+                    <div class="overlayonexc"></div>
+                    <div class="yellow-pagexc">
+                        <div class="container">
+                            <div class="cart-header">
+                                <div class="cart-title">
+                                    <h1>BEST SELLER</h1>
+                                </div>
+                                <div class="cart-cls"></div>
+                            </div>
+                            <div class="cart-box-btn">
+                                <div class="container">
+                                    <div class="buttons">
+                                        <button class="cart-item-btn" onclick="showItems(1, this)"><i class="coler-icon fa-solid fa-bolt"></i></button>
+                                        <button class="cart-item-btn" onclick="showItems(2, this)"><i class="coler-icon fa-regular fa-heart"></i></button>
+                                        <button class="cart-item-btn" onclick="showItems(3, this)"><i class="coler-icon fa-regular fa-eye"></i></button>
+                                        <button class="cart-item-btn" onclick="showItems(4, this)"><i class="coler-icon fa-solid fa-bag-shopping"></i></button>
+                                        <!-- Đường underlineCart -->
+                                        <div class="underlineCart"></div>
+                                    </div>
+                            
+                                    <!-- Các mục (items) sẽ hiển thị ở đây khi nhấn vào button -->
+                                    <div id="items-1" class="itemsx">
+                                        <div class="product-line"></div>
+                                            
+                                            <div class="product-line"></div>
+                                            <div class="sup-menu-colum_four-item">
+                                                <div class="col-md-4 colum_four-img">
+                                                    <img src="assets/img/froduct/sm_2_1.svg" alt="">
+                                                </div>
+                                                <div class="col-md-8 colum_four-descriprion">
+                                                    <div class="froduct-new-item-pescription">
+                                                        <p class="froduct-new-item-name" style="font-size: 16px;">Loose Fit Bermuda Shorts</p>
+                                                        <div class="froduct-item-boxstart">
+                                                            <img src="assets/img/5strat.svg" style="width: 27%;" alt="">
+                                                            <p class="froduct-new-item-number-start">5.0/5</p>
+                                                        </div>
+                                                        <div class="froduct-new-item-boxprice">
+                                                            <p class="froduct-new-item-newPrice" style="font-size: 22px;">$80</p>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div id="items-2" class="itemsx">
+                                        <div class="item-content cart-haert-main">
+                                            <i class="main-icon-cart coler-icon fa-regular fa-heart"></i>
+                                            <p>
+                                                You don't have any liked products
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div id="items-3" class="itemsx">
+                                        <div class="product-line"></div>
+                                        <div class="sup-menu-colum_four-item">
+                                            <div class="col-md-4 colum_four-img">
+                                                <img src="assets/img/froduct/sm_2_1.svg" alt="">
+                                            </div>
+                                            <div class="col-md-8 colum_four-descriprion">
+                                                <div class="froduct-new-item-pescription">
+                                                    <p class="froduct-new-item-name" style="font-size: 16px;">Loose Fit Bermuda Shorts</p>
+                                                    <div class="froduct-item-boxstart">
+                                                        <img src="assets/img/5strat.svg" style="width: 27%;" alt="">
+                                                        <p class="froduct-new-item-number-start">5.0/5</p>
+                                                    </div>
+                                                    <div class="froduct-new-item-boxprice">
+                                                        <p class="froduct-new-item-newPrice" style="font-size: 22px;">$80</p>
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="items-4" class="itemsx">
+                                        <div class="item-content cart-haert-main">
+                                            
+                                                <h2 class="item-content-title">Your cart is empty.</h2>
+                                                <div class="btn-icon-three">
+                                                    <span>RETURN TO SHOP</span>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img id="openYellowPagex" src="assets/img/froduct/acout.svg" alt="Iconx">
+                    <div class="overlayonex"></div>
+                    <div class="yellow-pagex">   
+                        <div class="container">
+                            <div class="acout-title"><h1>SIGN IN</h1></div>
+                            <div class="acout-main">
+                                <input type="" class="user" placeholder="Email *">
+                                <input type="" class="user" placeholder="Password *">
+                                <a href="" class="rmb-pass">Lost your password?</a>
+                                <button class="login">LOGIN</button>
+                                <button class="cr-acout">CREATE AN ACCOUNT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     </div>
+     </div>
+     <!--content -->
+        <div class="main-big">
+            <div class="container">
+                <div class="row content-wrap img-hover-two">
+                    <div class="col-12 col-md-6 content-position">
+                        <h1 class="content-position-title scrollAnimation">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+                        <p class="content-position-description scrollAnimation">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+                        <div class="content-position-btn btn scrollAnimation">
+                            <a href="">Shop Now</a>
+                        </div>
+                        <div class="row hightlights scrollAnimation">
+                            <div class="col-6 col-md-4 hightlights-item">
+                                <h2 class="hightlights-number ">200+</h2>
+                                <p class="hightlights-description ">International Brands</p>
+                            </div>
+                            <div class="vertical-line-one"></div>
+                            <div class="col-6 col-md-4 hightlights-item">
+                                <h2 class="hightlights-number ">2,000+</h2>
+                                <p class="hightlights-description ">High-Quality Products</p>
+                            </div>
+                            <div class="vertical-line-two"></div>
+                            <div class="col-12 col-md-4 hightlights-item">
+                                <h2 class="hightlights-number ">30,000+</h2>
+                                <p class="hightlights-description ">Happy Customers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 content-left">
+                        <img src="assets/img/imgContent-left.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- footer-brand -->
+      <div class="bgr-brand">
+        <div class="container">
+            <div class="row footer-brand img-hover">
+                <a href="" class="col-md col-4 brand-item"><img src="assets/img/brand1.svg" alt=""></a>
+                <a href="" class="col-md col-4 brand-item"><img src="assets/img/zera.svg" alt="" style="height: 33px;"></a>
+                <a href="" class="col-md col-4 brand-item"><img src="assets/img/br3.svg" alt=""></a>
+                <a href="" class="col-md col-6 brand-item"><img src="assets/img/br4.svg" alt=""></a>
+                <a href="" class="col-md col-6 brand-item"><img src="assets/img/cavin.svg" alt=""></a>
+              </div>
+          </div>
+      </div>
+      <!--froduct new -->
+      <div class="container">
+        <div class="forduct-new">
+            <h1 class="froduct-new-title">NEW ARRIVALS</h1>   
+<!-- Flickity HTML init -->
+<div class="carousel none_btn" data-flickity='{ "wrapAround": true }'>   
+    <div class="carousel-cell setting_car">
+
+        <img class="product-img" src="assets/img/froduct-new1.svg" alt="">
+        <div class="froduct-new-item-pescription">
+            <p class="froduct-new-item-name">T-shirt with Tape Details</p>
+            <div class="froduct-item-boxstart">
+                <img src="assets/img/start-froduct.svg" alt="">
+                <p class="froduct-new-item-number-start">4.5</p><p>/5</p>
+            </div>
+            <div class="froduct-new-item-boxprice">
+                <p class="froduct-new-item-newPrice">$120</p>
+                <p class="froduct-new-item-oldPrice"><s></s></p>
+            </div>
+        </div>    
+    </div>
+    <div class="carousel-cell setting_car">
+    
+        <img class="product-img" src="assets/img/froduct-new-jean.svg" alt="">
+        <div class="froduct-new-item-pescription">
+            <p class="froduct-new-item-name">Skinny Fit Jeans</p>
+            <div class="froduct-item-boxstart">
+                <img src="assets/img/3-5start.svg" alt="">
+                <p class="froduct-new-item-number-start">3.5</p><p>/5</p>
+            </div>
+            <div class="froduct-new-item-boxprice">
+                <p class="froduct-new-item-newPrice">$240</p>
+                <p class="froduct-new-item-oldPrice"><s>$260</s></p>
+                <div class="froduct-new-item-boxSalePrice"><p class="froduct-new-item-salePrice">-20%</p></div>
+            </div>
+        </div>    
+    
+    </div>
+    <div class="carousel-cell setting_car">
+    
+        <img class="product-img" src="assets/img/froduct-new-shirt.svg" alt="">
+        <div class="froduct-new-item-pescription">
+            <p class="froduct-new-item-name">Checkered Shirt</p>
+            <div class="froduct-item-boxstart">
+                <img src="assets/img/start-froduct.svg" alt="">
+                <p class="froduct-new-item-number-start">4.5</p><p>/5</p>
+            </div>
+            <div class="froduct-new-item-boxprice">
+                <p class="froduct-new-item-newPrice">$180</p>
+                
+            </div>
+        </div>    
+    
+    </div>
+    <div class="carousel-cell setting_car">
+    
+        <img class="product-img" src="assets/img/froduct-new-4.svg" alt="">
+        <div class="froduct-new-item-pescription">
+            <p class="froduct-new-item-name">Sleeve Striped T-Shirt</p>
+            <div class="froduct-item-boxstart">
+                <img src="assets/img/start-froduct.svg" alt="">
+                <p class="froduct-new-item-number-start">4.5</p><p>/5</p>
+            </div>
+            <div class="froduct-new-item-boxprice">
+                <p class="froduct-new-item-newPrice">$130</p>
+                <p class="froduct-new-item-oldPrice"><s>$160</s></p>
+                <div class="froduct-new-item-boxSalePrice"><p class="froduct-new-item-salePrice">-30%</p></div>
+            </div>
+        </div>    
+    
+    </div>
+    <div class="carousel-cell setting_car">
+    
+        <img class="product-img" src="assets/img/froduct-new-shirt.svg" alt="">
+    <div class="froduct-new-item-pescription">
+        <p class="froduct-new-item-name">Checkered Shirt</p>
+        <div class="froduct-item-boxstart">
+            <img src="assets/img/start-froduct.svg" alt="">
+            <p class="froduct-new-item-number-start">4.5</p><p>/5</p>
+        </div>
+        <div class="froduct-new-item-boxprice">
+            <p class="froduct-new-item-newPrice">$180</p>
+            
+        </div>
+    </div>    
+    
+    </div>
+
+</div>
+            <div class="froduct-new-btn_viewAll btn">
+                <a href="">View All</a>
+            </div>
+          </div>
+      </div>
+      <!-- Top froduct sale -->
+      <div class="container">
+        <div class="forduct-sale">
+            <h1 class="froduct-new-title">TOP SELLING</h1>   
+            <div class="carousel none_btn" data-flickity='{ "wrapAround": true }'>   
+                <div class="carousel-cell setting_car">
+                    <div class="orduct-new-item">
+                        <img class="product-img" src="assets/img/sale1.svg" alt="">
+                        <div class="froduct-new-item-pescription">
+                            <p class="froduct-new-item-name">Vertical Striped Shirt</p>
+                            <div class="froduct-item-boxstart">
+                                <img src="assets/img/5strat.svg" alt="">
+                                <p class="froduct-new-item-number-start">5.0/5</p>
+                            </div>
+                            <div class="froduct-new-item-boxprice">
+                                <p class="froduct-new-item-newPrice">$212</p>
+                                <p class="froduct-new-item-oldPrice"><s>$232</s></p>
+                                <div class="froduct-new-item-boxSalePrice"><p class="froduct-new-item-salePrice">-20%</p></div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="carousel-cell setting_car">
+                    <div class="orduct-new-item">
+                        <img class="product-img" src="assets/img/sale2.svg" alt="">
+                        <div class="froduct-new-item-pescription">
+                            <p class="froduct-new-item-name">Courage Graphic T-shirt</p>
+                            <div class="froduct-item-boxstart">
+                                <img src="assets/img/4start.svg" alt="">
+                                <p class="froduct-new-item-number-start">4.0/5</p>
+                            </div>
+                            <div class="froduct-new-item-boxprice">
+                                <p class="froduct-new-item-newPrice">$145</p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="carousel-cell setting_car">
+                    <div class="orduct-new-item">
+                        <img class="product-img" src="assets/img/sale3.svg" alt="">
+                        <div class="froduct-new-item-pescription">
+                            <p class="froduct-new-item-name">Loose Fit Bermuda Shorts</p>
+                            <div class="froduct-item-boxstart">
+                                <img src="assets/img/3start.svg" alt="">
+                                <p class="froduct-new-item-number-start">3.0/5</p>
+                            </div>
+                            <div class="froduct-new-item-boxprice">
+                                <p class="froduct-new-item-newPrice">$80</p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="carousel-cell setting_car">
+                    <div class="orduct-new-item">
+                        <img class="product-img" src="assets/img/sale4.svg" alt="">
+                        <div class="froduct-new-item-pescription">
+                            <p class="froduct-new-item-name">Faded Skin Jeans</p>
+                            <div class="froduct-item-boxstart">
+                                <img src="assets/img/start-froduct.svg" alt="">
+                                <p class="froduct-new-item-number-start">4.5/5</p>
+                            </div>
+                            <div class="froduct-new-item-boxprice">
+                                <p class="froduct-new-item-newPrice">$210</p>
+                                
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="carousel-cell setting_car">
+                    <div class="orduct-new-item">
+                        <img class="product-img" src="assets/img/sale3.svg" alt="">
+                        <div class="froduct-new-item-pescription">
+                            <p class="froduct-new-item-name">Loose Fit Bermuda Shorts</p>
+                            <div class="froduct-item-boxstart">
+                                <img src="assets/img/3start.svg" alt="">
+                                <p class="froduct-new-item-number-start">3.0/5</p>
+                            </div>
+                            <div class="froduct-new-item-boxprice">
+                                <p class="froduct-new-item-newPrice">$80</p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            
+            </div>
+            <div class="froduct-new-btn_viewAll btn">
+                <a href="">View All</a>
+            </div>
+          </div>
+      </div>
+    <!-- Baner holder -->
+     <div class="container">
+        <div class="banner-holder">
+            <h2 class="banner-holder-title">BROWSE BY DRESS STYLE</h2>
+            <div class="banner-holder-box-item">
+                <div class="banner-holder-wrap-item">
+                    <div  class="banner-holder-item bhi-one">
+                        <img src="assets/img/bannerholder1.svg" alt="">
+                    </div>
+                    <div class="banner-holder-item bhi-two">
+                        <img src="assets/img/bannerholder2.svg" stalt="" >
+                    </div>
+                </div>
+                <div class="banner-holder-wrap-item">
+                    <div  class="banner-holder-item bhi-three">
+                        <img src="assets/img/bannerholder3.svg" alt="" >
+                    </div>
+                    <div class="banner-holder-item bhi-four">
+                        <img src="assets/img/bannerHolderGym.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- Review-->
+      <div class="container">
+        <div class="review">
+            <div class="review-header">
+                <h2>OUR HAPPY CUSTOMERS</h2>
+                <div class="review-header-arrow">
+                    <img src="assets/img/review-header-arrow-left.svg" alt="">
+                    <img src="assets/img/review-header-arrow-right.svg" alt="">
+                </div>
+            </div>
+            <div class="review-main">
+                 <div class="carousel"
+                 data-flickity='{ "wrapAround": true }'>
+                    <div class="carousel-cell setting_car_rv" style="margin-left: 20px;">
+                        <div class="review-main-wrap-item">
+                            <img class="review-main-wrap-item-start" src="assets/img/start-froduct.svg" alt="">
+                            <div class="review-main-name">
+                                <p>Sarah M.</p>
+                                <img src="assets/img/review-check.svg" alt="">
+                            </div>
+                            <p class="review-item-description">
+                                "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                            </p>
+                        </div>   
+                    </div>
+                    <div class="carousel-cell setting_car_rv" style="margin-left: 20px;">
+                        <div class="review-main-wrap-item">
+                            <img class="review-main-wrap-item-start" src="assets/img/start-froduct.svg" alt="">
+                            <div class="review-main-name">
+                                <p>Sarah M.</p>
+                                <img src="assets/img/review-check.svg" alt="">
+                            </div>
+                            <p class="review-item-description">
+                                "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                            </p>
+                        </div>   
+                    </div>
+                    <div class="carousel-cell setting_car_rv" style="margin-left: 20px;">
+                        <div class="review-main-wrap-item">
+                            <img class="review-main-wrap-item-start" src="assets/img/start-froduct.svg" alt="">
+                            <div class="review-main-name">
+                                <p>Sarah M.</p>
+                                <img src="assets/img/review-check.svg" alt="">
+                            </div>
+                            <p class="review-item-description">
+                                "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                            </p>
+                        </div>   
+                    
+                     </div>
+                     <div class="carousel-cell setting_car_rv" style="margin-left: 20px;">
+                        <div class="review-main-wrap-item">
+                            <img class="review-main-wrap-item-start" src="assets/img/start-froduct.svg" alt="">
+                            <div class="review-main-name">
+                                <p>Sarah M.</p>
+                                <img src="assets/img/review-check.svg" alt="">
+                            </div>
+                            <p class="review-item-description">
+                                "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                            </p>
+                        </div>   
+                    
+                     </div>
+                     <div class="carousel-cell setting_car_rv" style="margin-left: 20px;">
+                        <div class="review-main-wrap-item">
+                            <img class="review-main-wrap-item-start" src="assets/img/start-froduct.svg" alt="">
+                            <div class="review-main-name">
+                                <p>Sarah M.</p>
+                                <img src="assets/img/review-check.svg" alt="">
+                            </div>
+                            <p class="review-item-description">
+                                "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                            </p>
+                        </div>   
+                    
+                     </div>
+                </div>    
+            </div>
+        </div>
+      </div>
+      <!-- footer -->
+       <div class="container">
+            <div class="box-footer">
+                <div class="footer-subscribe">
+                    <div class="footer-subscribe-wrap">
+                        <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+                        <div class="footer-subscribe-right">
+                            <div class="footer-subscribe-right-mail">
+                                <img src="assets/img/email.svg" alt="">
+                                <input type="text" placeholder="Enter your email address">   
+                            </div>
+                            <div class="footer-subscribe-right-btn btn">
+                                <a href="">Subscribe to Newsletter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-main">
+                    <div class="footer-main-item-one">
+                        <h2>SHOP.CO</h2>
+                        <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                        <div class="footer-main-item-icon">
+                            <img src="assets/img/footer-main-icon.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-main-item">
+                        <h2>Company</h2>
+                        <div class="footer-main-item-menu">
+                            <ul>
+                                <li><p>About</p></li>
+                                <li><p>Features</p></li>
+                                <li><p>Works</p></li>
+                                <li><p>Career</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-main-item">
+                        <h2>HELP</h2>
+                        <div class="footer-main-item-menu">
+                            <ul>
+                                <li><p>Customer Support</p></li>
+                                <li><p>Delivery Details</p></li>
+                                <li><p>Terms & Conditions</p></li>
+                                <li><p>Privacy Policy</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-main-item">
+                        <h2>FAQ</h2>
+                        <div class="footer-main-item-menu">
+                            <ul>
+                                <li><p>Account</p></li>
+                                <li><p>Manage Deliveries</p></li>
+                                <li><p>Orders</p></li>
+                                <li><p>Payments</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-main-item">
+                        <h2>RESOURCES</h2>
+                        <div class="footer-main-item-menu">
+                            <ul>
+                                <li><p>Free eBooks</p></li>
+                                <li><p>Development Tutorial</p></li>
+                                <li><p>How to - Blog</p></li>
+                                <li><p>Youtube Playlist</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <!-- pay -->
+        <div class="container">
+            <div class="pay">
+                <a href="">Shop.co © 2000-2023, All Rights Reserved</a>
+                <div class="pay-icon">
+                    <img src="assets/img/pay.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- test -->
+    <!-- -------------------------------------------------- -->
+    <!--  -->
+    <script src="assets/js/search-prd.js"></script>
+     <script src="assets/js/jsHome.js"></script>
+     <script src="assets/js/animations.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Image Example</title>
+    <style>
+        /* Một số kiểu để hiển thị hình ảnh */
+        #toggleDiv {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<img src="your-image.jpg" id="toggleDiv" alt="Your Image" />
+
+<script>
+    // Lấy phần tử hình ảnh
+    const image = document.getElementById('toggleDiv');
+
+    // Thêm sự kiện click cho hình ảnh
+    image.addEventListener('click', function() {
+        alert("Bạn đã click vào hình ảnh!");
+    });
+
+    // Kiểm tra tính khả thi của click
+    if (image && image.offsetParent !== null) {
+        console.log("Bạn có thể click vào hình ảnh này!");
+    } else {
+        console.log("Bạn không thể click vào hình ảnh này!");
+    }
+</script>
+
+</body>
+</html>
+
+<div class="toggle-item">
+    <a href="javascript:void(0);">
+        <span class="menu-item">Shop</span>
+        <span class="toggle-icon"><img src="assets/img/froduct/increase.svg" alt=""></span>
+    </a>
+    <div class="submenu">
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+        </ul>
+    </div>
+</div>
